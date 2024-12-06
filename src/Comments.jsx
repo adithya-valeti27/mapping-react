@@ -18,21 +18,19 @@ const Comments = () => {
         console.log(data);
 
         if (res.ok) {
-            setLoading(false)
+          setLoading(false);
           setComm(data);
-          
         }
       } catch (error) {
-        setLoading(false)
+        setLoading(false);
         setError(true);
         setComm([]);
-
       }
     }
     setLoading(false);
     setError(false);
     getData();
-  },[]);
+  }, []);
   return (
     <div>
       {loading ? <p>Loading...</p> : null}

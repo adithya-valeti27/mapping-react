@@ -4,7 +4,7 @@
 // const App = () => {
 //     const[loading,setLoading] = useState(true);
 //     const[profiles,setProfiles] = useState([]);
-    
+
 //     useEffect(()=>{
 //      async function getData() {
 //         const url = 'https://jsonplaceholder.typicode.com/photos'
@@ -30,33 +30,31 @@
 //                 {pics.title}
 //             </li>
 //            ))}
-            
+
 //         </ol>
-      
+
 //     </div>
 //   )
 // }
 
 // export default App
 
-
-import React from 'react'
-import Pics from './Pics'
-import Comments from './Comments'
-import Posts from './Posts'
+import React from "react";
+import Pics from "./Pics";
+import Comments from "./Comments";
+import Posts from "./Posts";
 // import todos from './todos'
-import Todos from './todos'
-
+import Todos from "./todos";
 
 const App = () => {
   return (
     <div>
-       {/* <Comments/> */}
-       {/* <Posts/> */}
-       
-      <Todos/>
-    </div>
-  )
-}
+      {/* <Comments/> */}
+      {/* <Posts/> */}
 
-export default App
+      <Todos />
+    </div>
+  );
+};
+
+export default App;
